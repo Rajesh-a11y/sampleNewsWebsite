@@ -1,10 +1,16 @@
 import React from 'react'
+import Header from './components/common/header/Header'
+import { BrowserRouter as Router,Switch,Route,Link } from 'react-router-dom'
 
-const App = () => {
+function App() {
   return (
-    <div>
-      <h1>Hello, React</h1>
-    </div>
+    <>
+      <Router>
+        <Header />
+        <Switch>{/*<Route path="/" component={Homepages} /> */}
+        </Switch>
+      </Router>  
+    </>
   )
 }
 
